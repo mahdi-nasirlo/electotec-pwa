@@ -4,12 +4,19 @@ import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 import Banner from "../components/banner";
+import PostCart from "../components/postCart";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Banner />
+      <PostCart />
+      <PostCart />
+      <PostCart />
+      <PostCart />
+      <PostCart />
+      <PostCart />
       <div className={styles.container}>
         <Link href={"/ContactUs"}>
           <h1 className="text-3xl font-bold underline">Hello world!</h1>
