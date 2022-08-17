@@ -1,33 +1,40 @@
-import Image from "next/image";
-import Logo from "../static/logo.png";
-
-const styles = {
-  wrapper: "flex justify-center ",
-};
-
 const Header = () => {
   return (
     <>
-      <div className="flex justify-center gap-10 p-5 bg-yellow-500">
-        <div className="max-w-7xl flex flex-1 justify-between">
-          <div className="flex items-center cursor-pointer">
-            <Image
-              width={200}
-              height={40}
-              className={styles.logo}
-              src={Logo}
-            ></Image>
+      <form className="flex justify-center">
+        <label
+          // for="default-search"
+          className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
+        >
+          Search
+        </label>
+        <div className="relative w-full">
+          <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+            <svg
+              aria-hidden="true"
+              className="w-5 h-5 text-gray-500 dark:text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
           </div>
-          <div className="flex space-x-4 cursor-pointer items-center">
-            <div>Our Story</div>
-            <div>Membership</div>
-            <div>Sign In</div>
-            <div className="bg-black text-white rounded-3xl items-center p-2">
-              Get Started
-            </div>
-          </div>
+          <input className="block p-4 pl-10 w-full text-sm text-gray-900 bg-white rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+          <button
+            type="submit"
+            className="text-gray-600 absolute right-2.5 bottom-2.5 hover:bg-red-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            جست و جو
+          </button>
         </div>
-      </div>
+      </form>
     </>
   );
 };
