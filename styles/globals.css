@@ -3,13 +3,45 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: myFirstFont;
-  src: url("../public/fonts/Gilroy-Black.otf");
+  font-family: iranSans;
+  font-weight: 700;
+  src: url("../public/fonts/iransans/ttf/IRANSansWeb_Black.ttf");
+}
+
+@font-face {
+  font-family: iranSans;
+  font-weight: 600;
+  src: url("../public/fonts/iransans/ttf/IRANSansWeb_Bold.ttf");
+}
+
+@font-face {
+  font-family: iranSans;
+  font-weight: 500;
+  src: url("../public/fonts/iransans/ttf/IRANSansWeb_Medium.ttf");
+}
+
+@font-face {
+  font-family: iranSans;
+  font-weight: 400;
+  src: url("../public/fonts/iransans/ttf/IRANSansWeb_Light.ttf");
+}
+
+@font-face {
+  font-family: iranSans;
+  font-weight: 300;
+  src: url("../public/fonts/iransans/ttf/IRANSansWeb_UltraLight.ttf");
+}
+
+@font-face {
+  font-family: iranSans;
+  font-weight: 200;
+  src: url("../public/fonts/iransans/ttf/IRANSansWeb.ttf");
 }
 
 body {
   background: #f3f4f6;
-  font-family: myFirstFont;
+  font-family: iranSans;
+  direction: rtl;
 }
 /* html,
 body {

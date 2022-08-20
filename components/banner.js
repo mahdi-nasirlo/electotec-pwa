@@ -15,12 +15,12 @@ const Banner = () => {
             Start Reading
           </button>
         </div>
-        <Image
+        {/* <Image
           className="hidden h-32 md:inline-flex justify-center object-contain flex-1"
           width={500}
           height={400}
           src={BannerImage}
-        />
+        /> */}
       </div>
     </div>
   );

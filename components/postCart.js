@@ -9,12 +9,12 @@ const PostCart = () => {
     <div className="p-3 my-5 mx-auto w-full flex flex-col-reverse md:flex-row justify-center">
       <div>
         <div className="flex">
-          <Image
+          {/* <Image
             className="object-cover rounded-full overflow-hidden"
             src={avatar}
             width={30}
             height={30}
-          />
+          /> */}
           <div className="px-2 font-bold text-base">test name</div>
         </div>
         <Link href={"/article"}>
@@ -35,12 +35,12 @@ const PostCart = () => {
       </div>
       <div className="flex justify-center md:justify-start items-center pl-3">
         <Link href={"/article"}>
-          <Image
+          {/* <Image
             width={200}
             height={100}
             className="object-contain w-1/2 cursor-pointer"
             src={TestImg}
-          />
+          /> */}
         </Link>
       </div>
     </div>
