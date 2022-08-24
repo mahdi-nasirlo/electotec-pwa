@@ -4,9 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 const CategoryCart = ({ data }) => {
-  const myLoader = ({ src }) => {
-    return `${data.cover}`;
-  };
   return (
     <>
       <Link href={`/brand/${data.id}`}>
@@ -27,7 +24,8 @@ const CategoryCart = ({ data }) => {
             </div>
             <div className="ml-3 flex items-center">
               <Image
-                loader={myLoader}
+                alt={data.name}
+                loader={data.cover}
                 src={data.cover}
                 width={80}
                 height={80}

@@ -42,6 +42,7 @@ const query = (id) => ({
                 id
                 name
                 cover
+                logo
               }
             }
           }
